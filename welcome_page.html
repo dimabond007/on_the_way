@@ -18,10 +18,9 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="light-theme">
-
     <!-- page navbar -->
     <nav class="page-navbar" data-spy="affix" data-offset-top="10">
-        <ul class="nav-navbar container">
+        <ul class="nav-navbar container">   
             <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href=".\allrides.html" class="nav-link">findAride</a></li>
             <li class="nav-item"><a href="#" class="nav-link"><img src="assets/imgs/logo_on_the_way.PNG"
@@ -32,7 +31,7 @@
             <li class="nav-item search">
                 <!--<a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
                 <div class="search-wrapper">-->
-                <!--<form>
+                    <!--<form>
                         <input type="search" class="form-control" name="" placeholder="hit enter to search">
                     </form>-->
                 </div>
@@ -60,10 +59,15 @@
                 Authorizations: <span id="authorizations">[Authorizations]</span>
             </p>
             <div class="button-container">
-                <button class="btn btn-theme-color" id="createaride">Create A Ride</button>
-                <button class="btn btn-theme-color" id="findaride">Find A Ride</button>
-
-            </div>
+                <button class="btn btn-theme-color" id="createaride">
+                    <a href="./create_new_ride.html">Create A Ride</a>
+                  </button>
+                  
+                  <button class="btn btn-theme-color" id="findaride">
+                    <a href="./allrides.html">Find A Ride</a>
+                  </button>
+                  
+        </div>
     </header><!-- end of page header -->
 
     <!-- modal -->
@@ -142,7 +146,7 @@
                         <h6 class="card-subtitle"></h6>
                         <h3 class="card-title"></h3>
                         <p></p>
-                    </div>
+                    </div>                  
                 </a>
             </div>
             <div class="col-md-6">
@@ -183,8 +187,7 @@
             <footer class="footer">
                 <p class="infos">&copy;
                     <script>document.write(new Date().getFullYear())</script>, Made with <i
-                        class="ti-heart text-danger"></i> by <!--<a href="http://www.devcrud.com">-->DOMD Company,
-                    incorporated</a>
+                        class="ti-heart text-danger"></i> by <!--<a href="http://www.devcrud.com">-->DOMD Company, incorporated</a>
                 </p>
                 <!--<span>|</span>-->
                 <!--<div class="links">
@@ -206,6 +209,7 @@
 
     <!-- Dorang js -->
     <script src="assets/js/dorang.js"></script>
+    <script src="./assets/js/welcome_page.js"></script>
 
 </body>
 
