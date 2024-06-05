@@ -1,0 +1,77 @@
+{
+    "rides": [
+      {
+        "id": 1,
+        "from": "Tel Aviv",
+        "to": "Jerusalem",
+        "number_of_driver": 1,
+        "number_of_commander": 0,
+        "number_of_car": 1,
+        "free_seats": 3,
+        "is_trunk": false,
+        "date_of_ride": "2024-06-10",
+        "time_of_ride": "08:00"
+      },
+      {
+        "id": 2,
+        "from": "Haifa",
+        "to": "Eilat",
+        "number_of_driver": 1,
+        "number_of_commander": 1,
+        "number_of_car": 2,
+        "free_seats": 5,
+        "is_trunk": true,
+        "date_of_ride": "2024-06-12",
+        "time_of_ride": "10:30"
+      },
+      {
+        "id": 3,
+        "from": "Beer Sheva",
+        "to": "Ashdod",
+        "number_of_driver": 2,
+        "number_of_commander": 0,
+        "number_of_car": 1,
+        "free_seats": 2,
+        "is_trunk": false,
+        "date_of_ride": "2024-06-14",
+        "time_of_ride": "15:00"
+      },
+      {
+        "id": 4,
+        "from": "Netanya",
+        "to": "Rishon LeZion",
+        "number_of_driver": 1,
+        "number_of_commander": 1,
+        "number_of_car": 1,
+        "free_seats": 4,
+        "is_trunk": true,
+        "date_of_ride": "2024-06-16",
+        "time_of_ride": "09:00"
+      },
+      {
+        "id": 5,
+        "from": "Ashdod",
+        "to": "Ashkelon",
+        "number_of_driver": 1,
+        "number_of_commander": 1,
+        "number_of_car": 1,
+        "free_seats": 4,
+        "is_trunk": true,
+        "date_of_ride": "2024-06-16",
+        "time_of_ride": "09:00"
+      }
+    ],
+    "users":[
+        {
+            "id": "1234567",
+            "name": "John Doe",
+            "phone": "+1 123-456-7890",
+            "is_officer": true,
+            "is_commander": false,
+            "is_driver": true,
+            "password": "user123"
+          }
+    ]
+
+  }
+  
