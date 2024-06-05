@@ -1,7 +1,7 @@
 {
   "rides": [
     {
-      "id": "1",
+      "id": 1,
       "from": "Tel Aviv",
       "to": "Jerusalem",
       "number_of_driver": 1,
@@ -13,7 +13,7 @@
       "time_of_ride": "08:00"
     },
     {
-      "id": "2",
+      "id": 2,
       "from": "Haifa",
       "to": "Eilat",
       "number_of_driver": 1,
@@ -25,7 +25,7 @@
       "time_of_ride": "10:30"
     },
     {
-      "id": "3",
+      "id": 3,
       "from": "Beer Sheva",
       "to": "Ashdod",
       "number_of_driver": 2,
@@ -37,7 +37,7 @@
       "time_of_ride": "15:00"
     },
     {
-      "id": "4",
+      "id": 4,
       "from": "Netanya",
       "to": "Rishon LeZion",
       "number_of_driver": 1,
@@ -47,9 +47,33 @@
       "is_trunk": true,
       "date_of_ride": "2024-06-16",
       "time_of_ride": "09:00"
+    },
+    {
+      "from": "Tel Aviv, Israel",
+      "to": "Eilat, Israel",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": null,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "",
+      "id": 5
+    },
+    {
+      "from": "Tel Aviv, Israel",
+      "to": "Jerusalem, Israel",
+      "number_of_driver": 2323234,
+      "number_of_commander": 3454676,
+      "number_of_car": 45646,
+      "free_seats": 3,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "20:10",
+      "id": 8
     }
   ],
-  "users": [
+  "user": [
     {
       "id": "1234567",
       "name": "John Doe",
