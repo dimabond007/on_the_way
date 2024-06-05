@@ -20,10 +20,7 @@
 
     <!-- Bootstrap + Dorang main styles -->
     <link rel="stylesheet" href="assets/css/dorang.css" />
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"
-    ></script>
+    
   </head>
   <body
     data-spy="scroll"
@@ -85,7 +82,7 @@
       <div class="col-md-10 col-lg-8 m-auto">
         <h1 style="font-size: 100px">.</h1>
         <h6 class="title mb-2">create new ride</h6>
-        <form class="ride-form">
+        <form class="ride-form" onsubmit="submitRide(event)">
           <input
             type="text"
             value="Tel Aviv"
@@ -178,7 +175,7 @@
     <!-- end of modal -->
 
     <!-- page container -->
-
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"></script>
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
