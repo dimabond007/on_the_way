@@ -1,3 +1,5 @@
+const id = localStorage.getItem("isLoggedIn");
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".ride-form");
   form.addEventListener("submit", submitRide);
@@ -7,24 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
   autocomplete(toInput);
 });
 const url = "http://localhost:8000";
-function submitRide(ev) {
+async function submitRide(ev) {
   ev.preventDefault();
   const form = document.querySelector(".ride-form");
   const formData = new FormData(form);
   inputData = Object.fromEntries(formData);
+  console.log(await ValiditeDriver(parseInt(inputData.driver)));
+  console.log(await ValiditeCommander(parseInt(inputData.commander)));
   if (
-    !ValiditeDriver(
-      parseInt(inputData.driver) &&
-      !ValiditeCommander(parseInt(inputData.commander))
-    )
+    !(await ValiditeDriver(parseInt(inputData.driver))) ||
+    !(await ValiditeCommander(parseInt(inputData.commander)))
   )
     return;
-  console.log(inputData);
   const post = {
     from: inputData.from,
     to: inputData.to,
     number_of_driver: parseInt(inputData.driver),
     number_of_commander: parseInt(inputData.commander),
+    number_of_officer: parseInt(id),
     number_of_car: parseInt(inputData.car_number),
     free_seats: parseInt(inputData.free_seats),
     is_trunk: inputData.trunk === "on" ? true : false,
@@ -44,22 +46,29 @@ function submitRide(ev) {
 }
 async function ValiditeDriver(driver) {
   try {
-    const response = await fetch(`${url}/user/${driver}`);
+    const response = await fetch(`${url}/users/${driver}`);
     const data = await response.json();
-    alert(data);
-    return data.is_driver;
+    if (!data.is_driver) {
+      alert("not driver");
+      return false;
+    } else return true;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    alert("driver not found");
+    console.error("driver not found:", error);
     return false;
   }
 }
 async function ValiditeCommander(commander) {
   try {
-    const response = await fetch(`${url}/user/${commander}`);
+    const response = await fetch(`${url}/users/${commander}`);
     const data = await response.json();
-    return data.is_commander;
+    if (!data.is_commander) {
+      alert("not commander");
+      return false;
+    } else return true;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    alert("commander not found");
+    console.error("commander not found:", error);
     return false;
   }
 }
