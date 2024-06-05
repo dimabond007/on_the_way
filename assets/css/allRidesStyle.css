@@ -1,0 +1,14 @@
+.allRides {
+    color: black;
+}
+
+/* allRidesStyle.css */
+.ride {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ride-details p {
+    margin: 5px 0;
+}

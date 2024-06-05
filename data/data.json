@@ -1,0 +1,203 @@
+{
+  "rides": [
+    {
+      "id": "1",
+      "from": "Tel Aviv",
+      "to": "Jerusalem",
+      "number_of_driver": 1,
+      "number_of_commander": 0,
+      "number_of_car": 1,
+      "free_seats": 3,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-10",
+      "time_of_ride": "08:00"
+    },
+    {
+      "id": "2",
+      "from": "Haifa",
+      "to": "Eilat",
+      "number_of_driver": 1,
+      "number_of_commander": 1,
+      "number_of_car": 2,
+      "free_seats": 5,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-12",
+      "time_of_ride": "10:30"
+    },
+    {
+      "id": "3",
+      "from": "Beer Sheva",
+      "to": "Ashdod",
+      "number_of_driver": 2,
+      "number_of_commander": 0,
+      "number_of_car": 1,
+      "free_seats": 2,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-14",
+      "time_of_ride": "15:00"
+    },
+    {
+      "id": "4",
+      "from": "Netanya",
+      "to": "Rishon LeZion",
+      "number_of_driver": 1,
+      "number_of_commander": 1,
+      "number_of_car": 1,
+      "free_seats": 4,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-16",
+      "time_of_ride": "09:00"
+    }
+  ],
+  "users": [
+    {
+      "id": "1234567",
+      "name": "John Doe",
+      "phone": "+1 123-456-7890",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": true,
+      "password": "user123"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1234567",
+      "ride_id": "1234567",
+      "user_id": "123123",
+      "status": "true"
+    },
+    {
+      "id": "eq9lce351",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "qtugsjlth",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "ec4fwu8pr",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "6hymcr6em",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "d1h5j7dy2",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "7nxwueawm",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "3nt4iwjt4",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "0kc59qb3y",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "jn4kmew6y",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "76x786v0r",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "yd4hsoqs8",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "19y1cvc87",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "61tsh36g9",
+      "ride_id": "4",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "la2724w1v",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "fbeormtlv",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "csut1dy3f",
+      "ride_id": "2",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "byu2s3l7a",
+      "ride_id": "4",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "f5jt0oxv4",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "z7logyv67",
+      "ride_id": "1",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "30jc1ttci",
+      "ride_id": "2",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "495k9nfsp",
+      "ride_id": "3",
+      "user_id": "1234567",
+      "status": "true"
+    },
+    {
+      "id": "h5725wjx3",
+      "ride_id": "4",
+      "user_id": "1234567",
+      "status": "true"
+    }
+  ]
+}
