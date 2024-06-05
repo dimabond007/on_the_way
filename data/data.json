@@ -1,0 +1,158 @@
+{
+  "rides": [
+    {
+      "id": 1,
+      "from": "Tel Aviv",
+      "to": "Jerusalem",
+      "number_of_driver": 1,
+      "number_of_commander": 0,
+      "number_of_car": 1,
+      "free_seats": 3,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-10",
+      "time_of_ride": "08:00"
+    },
+    {
+      "id": 2,
+      "from": "Haifa",
+      "to": "Eilat",
+      "number_of_driver": 1,
+      "number_of_commander": 1,
+      "number_of_car": 2,
+      "free_seats": 5,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-12",
+      "time_of_ride": "10:30"
+    },
+    {
+      "id": 3,
+      "from": "Beer Sheva",
+      "to": "Ashdod",
+      "number_of_driver": 2,
+      "number_of_commander": 0,
+      "number_of_car": 1,
+      "free_seats": 2,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-14",
+      "time_of_ride": "15:00"
+    },
+    {
+      "id": 4,
+      "from": "Netanya",
+      "to": "Rishon LeZion",
+      "number_of_driver": 1,
+      "number_of_commander": 1,
+      "number_of_car": 1,
+      "free_seats": 4,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-16",
+      "time_of_ride": "09:00"
+    },
+    {
+      "from": "Tel Aviv, Israel",
+      "to": "Eilat, Israel",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": null,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "",
+      "id": 5
+    },
+    {
+      "from": "Tel Aviv, Israel",
+      "to": "Jerusalem, Israel",
+      "number_of_driver": 2323234,
+      "number_of_commander": 3454676,
+      "number_of_car": 45646,
+      "free_seats": 3,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "20:10",
+      "id": 8
+    }
+  ],
+  "user": [
+    {
+      "id": "1234567",
+      "name": "John Doe",
+      "phone": "+1 123-456-7890",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": true
+    },
+    {
+      "id": "2345678",
+      "name": "Jane Smith",
+      "phone": "+1 987-654-3210",
+      "is_officer": false,
+      "is_commander": true,
+      "is_driver": false
+    },
+    {
+      "id": "3456789",
+      "name": "Alex Johnson",
+      "phone": "+1 555-123-4567",
+      "is_officer": true,
+      "is_commander": true,
+      "is_driver": false
+    },
+    {
+      "id": "4567890",
+      "name": "Emily Lee",
+      "phone": "+1 777-888-9999",
+      "is_officer": false,
+      "is_commander": false,
+      "is_driver": true
+    },
+    {
+      "id": "5678901",
+      "name": "David Rodriguez",
+      "phone": "+1 444-555-6666",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": false
+    },
+    {
+      "id": "6789012",
+      "name": "Sophia Chen",
+      "phone": "+1 222-333-4444",
+      "is_officer": false,
+      "is_commander": true,
+      "is_driver": true
+    },
+    {
+      "id": "7890123",
+      "name": "Michael Kim",
+      "phone": "+1 999-888-7777",
+      "is_officer": true,
+      "is_commander": true,
+      "is_driver": true
+    },
+    {
+      "id": "8901234",
+      "name": "Olivia Patel",
+      "phone": "+1 666-777-8888",
+      "is_officer": false,
+      "is_commander": false,
+      "is_driver": false
+    },
+    {
+      "id": "9012345",
+      "name": "Daniel Nguyen",
+      "phone": "+1 111-222-3333",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": true
+    },
+    {
+      "id": "0123456",
+      "name": "Isabella Wang",
+      "phone": "+1 888-999-0000",
+      "is_officer": false,
+      "is_commander": true,
+      "is_driver": false
+    }
+  ]
+}
