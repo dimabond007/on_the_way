@@ -15,7 +15,7 @@ function submitRide(ev) {
   if (
     !ValiditeDriver(
       parseInt(inputData.driver) &&
-        !ValiditeCommander(parseInt(inputData.commander))
+      !ValiditeCommander(parseInt(inputData.commander))
     )
   )
     return;
@@ -31,16 +31,16 @@ function submitRide(ev) {
     date_of_ride: inputData.begin_date,
     time_of_ride: inputData.begin_time,
   };
-  //   axios
-  //     .post(`${url}/rides`, post)
-  //     .then((response) => {
-  //       console.log("Ride submitted successfully:", response.data);
-  //       alert("Ride submitted successfully");
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error submitting ride:", error);
-  //       alert("Error submitting ride");
-  //     });
+  axios
+    .post(`${url}/rides`, post)
+    .then((response) => {
+      console.log("Ride submitted successfully:", response.data);
+      alert("Ride submitted successfully");
+    })
+    .catch((error) => {
+      console.error("Error submitting ride:", error);
+      alert("Error submitting ride");
+    });
 }
 async function ValiditeDriver(driver) {
   try {

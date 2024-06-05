@@ -6,11 +6,11 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const errorMessage = document.getElementById('errorMessage');
 
     // Fetch data from data.json file
-    fetch('data/data.json')
+    fetch('http://localhost:8000/users/' + username)
         .then(response => response.json())
         .then(data => {
             // Check if username exists in the data
-            const user = data.users.find(user => user.id === username);
+            const user = data
 
             if (user && user.password === password) {
                 errorMessage.textContent = "Login successful!";
