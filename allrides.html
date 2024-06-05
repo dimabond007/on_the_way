@@ -21,8 +21,8 @@
     <!-- page navbar -->
     <nav class="page-navbar" data-spy="affix" data-offset-top="10">
         <ul class="nav-navbar container">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="./allrides.html" class="nav-link">findAride</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href=".\allrides.html" class="nav-link">findAride</a></li>
             <li class="nav-item"><a href="#" class="nav-link"><img src="assets/imgs/logo_on_the_way.PNG"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"></a>
             </li>
@@ -42,9 +42,13 @@
     <div class="contents">
         <div class="userFindInputs">
             <h1 class="allRides">Find A Ride</h1>
-            <input type="text" class="from" placeholder="From">
-            <input type="text" class="to" placeholder="To">
-            <input type="text" class="FreeSpace" placeholder="Free space">
+            <form action="" class="search_form" onsubmit="search_ride(event);">
+                <input type="text" id="from" name="from" class="form-control" placeholder="From">
+                <input type="text" id="to" name="to" class="form-control" placeholder="To">
+                <input type="text" class="FreeSpace" placeholder="Free space">
+                <input type="submit" value="Search">
+            </form>
+            
         </div>
 
     </div>
@@ -83,6 +87,9 @@
     </div><!-- end of pre footer -->
 
     <!-- core  -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=geometry"></script>
+
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
@@ -92,7 +99,7 @@
     <!-- Dorang js -->
     <script src="assets/js/dorang.js"></script>
 
-    <script src="assets/js/allRides.js"></script>
+    <script src="./assets/js/allRides.js"></script>
 
 </body>
 
