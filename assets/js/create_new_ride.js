@@ -1,3 +1,5 @@
+const id = localStorage.getItem("isLoggedIn");
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".ride-form");
   form.addEventListener("submit", submitRide);
@@ -24,6 +26,7 @@ async function submitRide(ev) {
     to: inputData.to,
     number_of_driver: parseInt(inputData.driver),
     number_of_commander: parseInt(inputData.commander),
+    number_of_officer: parseInt(id),
     number_of_car: parseInt(inputData.car_number),
     free_seats: parseInt(inputData.free_seats),
     is_trunk: inputData.trunk === "on" ? true : false,
