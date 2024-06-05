@@ -13,7 +13,7 @@
 
     <!-- Bootstrap + Dorang main styles -->
     <link rel="stylesheet" href="assets/css/dorang.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/welcome_page.css">
 
 </head>
 
@@ -32,7 +32,7 @@
             <li class="nav-item search">
                 <!--<a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
                 <div class="search-wrapper">-->
-                    <!--<form>
+                <!--<form>
                         <input type="search" class="form-control" name="" placeholder="hit enter to search">
                     </form>-->
                 </div>
@@ -54,13 +54,16 @@
     <header class="header">
         <div class="overlay"></div>
         <div class="header-content">
-            <h1 class="header-title">Need A Ride?</h1>
-            <p class="header-subtitle">OnTheWay app would be glad to supply the best solution for your People </p>
+            <p>
+                Username: <span id="username">[Username]</span><br>
+                Personal ID: <span id="personal-id">[Personal ID]</span><br>
+                Authorizations: <span id="authorizations">[Authorizations]</span>
+            </p>
+            <div class="button-container">
+                <button class="btn btn-theme-color" id="createaride">Create A Ride</button>
+                <button class="btn btn-theme-color" id="findaride">Find A Ride</button>
 
-            <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Click
-                Here</button>
-
-        </div>
+            </div>
     </header><!-- end of page header -->
 
     <!-- modal -->
@@ -139,7 +142,7 @@
                         <h6 class="card-subtitle"></h6>
                         <h3 class="card-title"></h3>
                         <p></p>
-                    </div>                  
+                    </div>
                 </a>
             </div>
             <div class="col-md-6">
@@ -180,7 +183,8 @@
             <footer class="footer">
                 <p class="infos">&copy;
                     <script>document.write(new Date().getFullYear())</script>, Made with <i
-                        class="ti-heart text-danger"></i> by <!--<a href="http://www.devcrud.com">-->DOMD Company, incorporated</a>
+                        class="ti-heart text-danger"></i> by <!--<a href="http://www.devcrud.com">-->DOMD Company,
+                    incorporated</a>
                 </p>
                 <!--<span>|</span>-->
                 <!--<div class="links">
