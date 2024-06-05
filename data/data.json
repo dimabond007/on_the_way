@@ -8,7 +8,6 @@
       "number_of_commander": 0,
       "number_of_car": 1,
       "free_seats": 3,
-      "is_trunk": false,
       "date_of_ride": "2024-06-10",
       "time_of_ride": "08:00"
     },
@@ -20,7 +19,6 @@
       "number_of_commander": 1,
       "number_of_car": 2,
       "free_seats": 5,
-      "is_trunk": true,
       "date_of_ride": "2024-06-12",
       "time_of_ride": "10:30"
     },
@@ -32,7 +30,6 @@
       "number_of_commander": 0,
       "number_of_car": 1,
       "free_seats": 2,
-      "is_trunk": false,
       "date_of_ride": "2024-06-14",
       "time_of_ride": "15:00"
     },
@@ -44,16 +41,85 @@
       "number_of_commander": 1,
       "number_of_car": 1,
       "free_seats": 4,
-      "is_trunk": true,
       "date_of_ride": "2024-06-16",
       "time_of_ride": "09:00"
+    },
+    {
+      "id": "5",
+      "from": "Tel Aviv, Israel",
+      "to": "Eilat, Israel",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": null,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "09:00"
+    },
+    {
+      "from": "Tel Aviv, Israel",
+      "to": "Jerusalem, Israel",
+      "number_of_driver": 2323234,
+      "number_of_commander": 3454676,
+      "number_of_car": 45646,
+      "free_seats": 3,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "20:10",
+      "id": "8"
+    },
+    {
+      "id": "8d54",
+      "from": "Tel Aviv",
+      "to": "Jerusalem",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": 2,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "21:22"
+    },
+    {
+      "id": "e96b",
+      "from": "Tel Aviv",
+      "to": "Jerusalem",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": 2,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "21:22"
+    },
+    {
+      "id": "c3e6",
+      "from": "Ashdod, Israel",
+      "to": "Ashdod, Israel",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": 2,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "21:23"
+    },
+    {
+      "id": "7e2b",
+      "from": "Ashdod, Israel",
+      "to": "Ashdod, Israel",
+      "number_of_driver": 1234567,
+      "number_of_commander": 2345678,
+      "number_of_car": 3456789,
+      "free_seats": 2,
+      "is_trunk": true,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "21:23"
     }
   ],
   "users": [
     {
-      "id": "1234567",
-      "name": "John Doe",
-      "phone": "+1 123-456-7890",
+      "id": "1111111",
+      "name": "Jane Smith",
+      "phone": "+1 987-654-3210",
       "is_officer": true,
       "is_commander": false,
       "is_driver": true,
@@ -62,142 +128,40 @@
   ],
   "orders": [
     {
-      "id": "1234567",
-      "ride_id": "1234567",
-      "user_id": "123123",
-      "status": "true"
-    },
-    {
-      "id": "eq9lce351",
+      "id": "5okkpd9y0",
       "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
+      "user_id": null,
+      "status": true
     },
     {
-      "id": "qtugsjlth",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "ec4fwu8pr",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "6hymcr6em",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "d1h5j7dy2",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "7nxwueawm",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "3nt4iwjt4",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "0kc59qb3y",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "jn4kmew6y",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "76x786v0r",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "yd4hsoqs8",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "19y1cvc87",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "61tsh36g9",
-      "ride_id": "4",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "la2724w1v",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "fbeormtlv",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "csut1dy3f",
-      "ride_id": "2",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "byu2s3l7a",
-      "ride_id": "4",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "f5jt0oxv4",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "z7logyv67",
-      "ride_id": "1",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "30jc1ttci",
-      "ride_id": "2",
-      "user_id": "1234567",
-      "status": "true"
-    },
-    {
-      "id": "495k9nfsp",
+      "id": "bjgmyx45n",
       "ride_id": "3",
-      "user_id": "1234567",
-      "status": "true"
+      "user_id": null,
+      "status": true
     },
     {
-      "id": "h5725wjx3",
-      "ride_id": "4",
+      "id": "ggxuuu09x",
+      "ride_id": "5",
       "user_id": "1234567",
-      "status": "true"
+      "status": true
+    },
+    {
+      "id": "bfuyu8r51",
+      "ride_id": "c3e6",
+      "user_id": "1234567",
+      "status": true
+    },
+    {
+      "id": "s542t7nsf",
+      "ride_id": "2",
+      "user_id": "1234567",
+      "status": true
+    },
+    {
+      "id": "you6bj5zj",
+      "ride_id": "7e2b",
+      "user_id": "1234567",
+      "status": true
     }
   ]
 }

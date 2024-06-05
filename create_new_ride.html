@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Start your development with Dorang landing page." />
+  <meta name="author" content="Devcrud" />
+  <title>Dorang | Free Bootstrap 4.3.x template</title>
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" />
+
+  <!-- Bootstrap + Dorang main styles -->
+  <link rel="stylesheet" href="assets/css/dorang.css" />
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="light-theme">
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+    <ul class="nav-navbar container">
+      <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="./allrides.html" class="nav-link">findAride</a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><img src="assets/imgs/logo_on_the_way.PNG"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"></a>
+      </li>
+      <li class="nav-item"><a href="./create_new_ride.html" class="nav-link">new ride</a></li>
+      <li class="nav-item"><a href="./myRides.html" class="nav-link">MyRides</a></li>
+      <li class="nav-item search">
+        <a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
+        <div class="search-wrapper">
+          <form>
+            <input type="search" class="form-control" name="" placeholder="hit enter to search">
+          </form>
+        </div>
+      </li>
+    </ul>
+  </nav><!-- end of page navbar -->
+  <!-- end of page navbar -->
+
+  <div class="theme-selector">
+    <a href="javascript:void(0)" class="spinner">
+      <i class="ti-paint-bucket"></i>
+    </a>
+    <div class="body">
+      <a href="javascript:void(0)" class="light"></a>
+      <a href="javascript:void(0)" class="dark"></a>
+    </div>
+  </div>
+
+  <!-- page header -->
+  <header class="header">
+    <div class="col-md-10 col-lg-8 m-auto">
+      <h1 style="font-size: 100px">.</h1>
+      <h6 class="title mb-2">create new ride</h6>
+      <form class="ride-form" onsubmit="submitRide(event)">
+        <input type="text" value="Tel Aviv" id="from" name="from" class="form-control" placeholder="from" required />
+        <input type="text" id="to" value="Jerusalem" name="to" class="form-control" placeholder="to" required />
+
+        <input type="text" class="form-control" name="driver" value="1234567" maxlength="7" pattern=".{7}"
+          title="7 characters number" placeholder="driver" required
+          oninput=" this.value = this.value.replace(/[^0-9]*/g, '')" />
+        <input type="text" value="2345678" name="commander" maxlength="7" pattern=".{7}" title="7 characters number"
+          class="form-control" placeholder="commander" required
+          oninput=" this.value = this.value.replace(/[^0-9]*/g, '')" />
+
+        <input type="text" name="car_number" value="3456789" maxlength="8" pattern=".{7,}" title="7 characters number"
+          class="form-control" placeholder="car NO." required
+          oninput=" this.value = this.value.replace(/[^0-9]*/g, '')" />
+        <input type="text" name="free_seats" class="form-control" placeholder="free seats" required
+          oninput=" this.value = this.value.replace(/[^0-9]*/g, '')" />
+        <input type="checkbox" name="trunk" />trunk
+
+        <input id="date-input" type="date" name="begin_date" placeholder="dd-mm-yyyy" value="dd-mm-yyyy"
+          min="2024-05-01" max="2030-12-31" />
+        <input type="time" name="begin_time" id="time-input" required />
+        <script>
+          const date = new Date();
+          document.getElementById("date-input").valueAsDate = date;
+          document.getElementById("date-input").min = date;
+        </script>
+        <input type="submit" value="submit-ride" class="form-control" />
+      </form>
+    </div>
+  </header>
+  <!-- end of page header -->
+
+  <!-- modal -->
+
+  <!-- end of modal -->
+
+  <!-- page container -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"></script>
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+  <!-- bootstrap affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Dorang js -->
+  <script src="assets/js/dorang.js"></script>
+  <script src="./assets/js/create_new_ride.js"></script>
+</body>
+
+</html>
