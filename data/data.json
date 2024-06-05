@@ -71,17 +71,110 @@
       "date_of_ride": "2024-06-05",
       "time_of_ride": "20:10",
       "id": 8
+    },
+    {
+      "from": "Tel Aviv",
+      "to": "Jerusalem",
+      "number_of_driver": 1111111,
+      "number_of_commander": 2222222,
+      "number_of_car": 3456789,
+      "free_seats": 3,
+      "is_trunk": false,
+      "date_of_ride": "2024-06-05",
+      "time_of_ride": "00:00",
+      "id": 9
     }
   ],
-  "user": [
+  "users": [
     {
-      "id": "1234567",
-      "name": "John Doe",
+      "id": "1111111",
+      "name": "Jane Smith",
+      "phone": "+1 987-654-3210",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": true,
+      "password": "user456"
+    },
+    {
+      "id": "2222222",
+      "name": "Alex Johnson",
+      "phone": "+1 555-123-4567",
+      "is_officer": true,
+      "is_commander": true,
+      "is_driver": false,
+      "password": "user789"
+    },
+    {
+      "id": "1234570",
+      "name": "Emily Brown",
+      "phone": "+1 123-987-6543",
+      "is_officer": false,
+      "is_commander": true,
+      "is_driver": false,
+      "password": "user101"
+    },
+    {
+      "id": "1234571",
+      "name": "Michael Lee",
+      "phone": "+1 555-789-1234",
+      "is_officer": true,
+      "is_commander": true,
+      "is_driver": false,
+      "password": "user202"
+    },
+    {
+      "id": "1234572",
+      "name": "Olivia Garcia",
+      "phone": "+1 987-123-4567",
+      "is_officer": false,
+      "is_commander": false,
+      "is_driver": true,
+      "password": "user303"
+    },
+    {
+      "id": "1234573",
+      "name": "William Martinez",
       "phone": "+1 123-456-7890",
       "is_officer": true,
       "is_commander": false,
       "is_driver": true,
-      "password": "user123"
+      "password": "user404"
+    },
+    {
+      "id": "1234574",
+      "name": "Sophia Adams",
+      "phone": "+1 555-987-6543",
+      "is_officer": false,
+      "is_commander": true,
+      "is_driver": false,
+      "password": "user505"
+    },
+    {
+      "id": "1234575",
+      "name": "Daniel Wright",
+      "phone": "+1 987-789-1234",
+      "is_officer": true,
+      "is_commander": true,
+      "is_driver": false,
+      "password": "user606"
+    },
+    {
+      "id": "1234576",
+      "name": "Isabella Clark",
+      "phone": "+1 123-987-6543",
+      "is_officer": false,
+      "is_commander": false,
+      "is_driver": true,
+      "password": "user707"
+    },
+    {
+      "id": "1234577",
+      "name": "Ethan Rodriguez",
+      "phone": "+1 555-123-4567",
+      "is_officer": true,
+      "is_commander": false,
+      "is_driver": true,
+      "password": "user808"
     }
   ],
   "orders": [

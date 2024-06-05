@@ -20,7 +20,10 @@
 
     <!-- Bootstrap + Dorang main styles -->
     <link rel="stylesheet" href="assets/css/dorang.css" />
-    
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"
+    ></script>
   </head>
   <body
     data-spy="scroll"
@@ -82,7 +85,7 @@
       <div class="col-md-10 col-lg-8 m-auto">
         <h1 style="font-size: 100px">.</h1>
         <h6 class="title mb-2">create new ride</h6>
-        <form class="ride-form" onsubmit="submitRide(event)">
+        <form class="ride-form">
           <input
             type="text"
             value="Tel Aviv"
@@ -120,6 +123,7 @@
             name="commander"
             maxlength="7"
             pattern=".{7}"
+            id="commander-input"
             title="7 characters number"
             class="form-control"
             placeholder="commander"
@@ -142,6 +146,7 @@
           <input
             type="text"
             name="free_seats"
+            value="3"
             class="form-control"
             placeholder="free seats"
             required
@@ -158,7 +163,13 @@
             min="2024-05-01"
             max="2030-12-31"
           />
-          <input type="time" name="begin_time" id="time-input" required />
+          <input
+            type="time"
+            value="00:00"
+            name="begin_time"
+            id="time-input"
+            required
+          />
           <script>
             const date = new Date();
             document.getElementById("date-input").valueAsDate = date;
@@ -175,7 +186,6 @@
     <!-- end of modal -->
 
     <!-- page container -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI22_uQqFh__1Rze1d_mURYC-o96jQ9Sw&libraries=places"></script>
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
