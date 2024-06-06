@@ -1,0 +1,32 @@
+/* Ride Detail Page Styling */
+.rideDetailWrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#rideDetails {
+  font-size: 1.2rem;
+}
+
+.rideDetail p {
+  margin: 10px 0;
+}
+
+.backButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #ff9800;
+}

@@ -1,0 +1,9 @@
+.input-flex {
+  display: flex;
+}
+#date-input {
+  margin-inline: 5px;
+}
+.header {
+  padding-top: 100px;
+}

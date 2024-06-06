@@ -1,3 +1,4 @@
+const url = "http://localhost:8000";
 const id = localStorage.getItem("isLoggedIn");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,19 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
   autocomplete(fromInput);
   autocomplete(toInput);
 });
-const url = "http://localhost:8000";
+
 async function submitRide(ev) {
   ev.preventDefault();
   const form = document.querySelector(".ride-form");
   const formData = new FormData(form);
-  inputData = Object.fromEntries(formData);
-  console.log(await ValiditeDriver(parseInt(inputData.driver)));
-  console.log(await ValiditeCommander(parseInt(inputData.commander)));
-  if (
-    !(await ValiditeDriver(parseInt(inputData.driver))) ||
-    !(await ValiditeCommander(parseInt(inputData.commander)))
-  )
-    return;
+  const inputData = Object.fromEntries(formData);
+
+  const driverValid = await validateUser(
+    parseInt(inputData.driver),
+    ".driver-input",
+    "is_driver"
+  );
+  const commanderValid = await validateUser(
+    parseInt(inputData.commander),
+    ".commander-input",
+    "is_commander"
+  );
+
+  if (!driverValid || !commanderValid) return;
+
   const post = {
     from: inputData.from,
     to: inputData.to,
@@ -29,46 +37,32 @@ async function submitRide(ev) {
     number_of_officer: parseInt(id),
     number_of_car: parseInt(inputData.car_number),
     free_seats: parseInt(inputData.free_seats),
-    is_trunk: inputData.trunk === "on" ? true : false,
     date_of_ride: inputData.begin_date,
     time_of_ride: inputData.begin_time,
   };
-  axios
-    .post(`${url}/rides`, post)
-    .then((response) => {
-      console.log("Ride submitted successfully:", response.data);
-      alert("Ride submitted successfully");
-    })
-    .catch((error) => {
-      console.error("Error submitting ride:", error);
-      alert("Error submitting ride");
-    });
-}
-async function ValiditeDriver(driver) {
+
   try {
-    const response = await fetch(`${url}/users/${driver}`);
-    const data = await response.json();
-    if (!data.is_driver) {
-      alert("not driver");
-      return false;
-    } else return true;
+    const response = await axios.post(`${url}/rides`, post);
+    console.log("Ride submitted successfully:", response.data);
+    alert("Ride submitted successfully");
   } catch (error) {
-    alert("driver not found");
-    console.error("driver not found:", error);
-    return false;
+    console.error("Error submitting ride:", error);
+    alert("Error submitting ride");
   }
 }
-async function ValiditeCommander(commander) {
+
+async function validateUser(userId, inputSelector, userType) {
   try {
-    const response = await fetch(`${url}/users/${commander}`);
+    const response = await fetch(`${url}/users/${userId}`);
     const data = await response.json();
-    if (!data.is_commander) {
-      alert("not commander");
-      return false;
-    } else return true;
+    const isValid = data[userType];
+    if (!isValid) {
+      document.querySelector(inputSelector).style.border = "1px solid red";
+    }
+    return isValid;
   } catch (error) {
-    alert("commander not found");
-    console.error("commander not found:", error);
+    console.error(`${userType} not found:`, error);
+    document.querySelector(inputSelector).style.border = "1px solid red";
     return false;
   }
 }
@@ -78,4 +72,11 @@ function autocomplete(input) {
   autocompleteFrom.addListener("place_changed", () => {
     const selectedPlace = autocompleteFrom.getPlace();
   });
+}
+
+function checkSeventhDigit() {
+  const driverBorder = document.querySelector(".driver-input");
+  const commanderBorder = document.querySelector(".commander-input");
+  if (driverBorder.value.length < 7) driverBorder.style.border = "";
+  if (commanderBorder.value.length < 7) commanderBorder.style.border = "";
 }
